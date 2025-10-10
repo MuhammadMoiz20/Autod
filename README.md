@@ -2,6 +2,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Create a `.env` file based on `.env.example` and add your Dartmouth chat API credentials:
+
+```
+DARTMOUTH_API_KEY=sk-your-key
+DARTMOUTH_API_BASE_URL=https://chat.dartmouth.edu/api/v1/
+```
+
+The Inngest agents default to the `anthropic.claude-3-5-haiku-20241022` model but you can override it by adjusting `dartmouthModel` in `src/lib/dartmouth.ts`.
+
 First, run the development server:
 
 ```bash
